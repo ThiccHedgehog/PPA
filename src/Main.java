@@ -36,7 +36,7 @@ public class Main {
         //System.out.println(t);
         // Press Shift+F10 or click the green arrow button in the gutter to run the code.
 
-
+/*
         int liczba1 = 1;
         int liczba2 = 2;
         int liczba3 = liczba1 + liczba2;
@@ -49,9 +49,41 @@ public class Main {
         System.out.println(l1 + "-" + l2 + "=" + l3);
 
         int p1 = 2;
-        int p2 = 4;
+        double p2 = 0.5;
         double p3 = Math.pow(p1, p2);
         System.out.println(p1 + "^" + p2 + "=" + p3);
+
+
+        String t = "Przykładowy tekst";
+        System.out.println(t.toUpperCase());
+        System.out.println(t.toLowerCase());
+
+
+
+
+        String q ="";
+        String q2 ="44";
+        String q3 =null;
+
+
+        System.out.println(q.isEmpty());
+        System.out.println(q2.isEmpty());
+
+        if (q3 !=null){
+            System.out.println(q3.isEmpty());
+        }else{
+            System.out.println("Błąd");
+        }
+        */
+
+        String s = null;
+
+        if (s != null && !s.isEmpty()){
+                System.out.println(s.toUpperCase());
+            }else{
+                System.out.println("tekst jest pusty lub null");
+            }
+
 
 
         }
