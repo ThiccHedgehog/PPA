@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class Main {
 
-    static void dodawanie(float a, float b){
-        System.out.println(a+b);
+   /* static void dodawanie(float a, float b){
+     System.out.println(a+b);
     }
     static void odejmowanie(float a, float b){
             System.out.println(a - b);
@@ -21,9 +21,9 @@ public class Main {
         }else {
             System.out.println(a / b);
         }
-    }
+    }*/
     public static void main(String[] args) {
-        try {
+       /* try {
             Scanner scan = new Scanner(System.in);
             System.out.println("Podaj liczbę a");
             float a = scan.nextInt();
@@ -52,5 +52,23 @@ public class Main {
             System.out.println("Błąd");
         }
 
-        }
+        String name2 = "Name";
+        String name3 = new String(name2);
+
+        System.out.println(name3 == name2);
+        System.out.println(name3.equals(name2));
+
+        System.out.println();*/
+
+        Samochod samochod = new Samochod();
+        samochod.setKolor("Niebieski");
+        samochod.setMarka("BMW");
+        samochod.setModel("A3");
+
+
+        System.out.println(samochod);
+
+        samochod.informacje();
+
     }
+ }
