@@ -1,74 +1,53 @@
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.lang.Math;
+import java.util.ArrayList;
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 
+       /* Kapibara kapibara = new Kapibara("ssak", "Feluś", "5");
+                Dziobak dziobak = new Dziobak("ssak", "Staś", "7");
+                Pies pies = new Pies("ssak", "Antek", "8");
+                Kot kot = new Kot("ssak", "Filemon", "6");
+
+                for(Zwierzęta zwierzęta: Zwierzęta.Lista){
+                System.out.println(zwierzęta);
+                zwierzęta.makeNoise();
+                zwierzęta.test();
+                }*/
 
 public class Main {
+    public static void main(String[] args) throws IOException {
 
-   /* static void dodawanie(float a, float b){
-     System.out.println(a+b);
-    }
-    static void odejmowanie(float a, float b){
-            System.out.println(a - b);
-    }
-    static void mnozenie(float a, float b){
-        System.out.println(a*b);
-    }
-    static void dzielenie(float a, float b){
-        if(b == 0){
-            System.out.println("Nie można dzielić przez 0");
-        }else {
-            System.out.println(a / b);
+
+
+
+        Pozycja p1 = new Pozycja("Chleb", 1, 3.5);
+        System.out.println(p1);
+        Pozycja p2 = new Pozycja("Cukier", 3, 4);
+        System.out.println(p2);
+        Pozycja p3 = new Pozycja("Cukier", 5, 4);
+        System.out.println(p3);
+        Pozycja p4 = new Pozycja("Pomarańcz", 15, 8);
+        System.out.println(p4);
+
+        Zamowienie z = new Zamowienie(20);
+        z.dodajPozycje(p1);
+        z.dodajPozycje(p2);
+        z.dodajPozycje(p3);
+        z.dodajPozycje(p4);
+        //z.usunPozycje(0);
+        //z.edytujPozycje(1);
+        System.out.println(z);
+
+
+        try {
+            Zamowienie.zapiszZamowienie(z, "testy");
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-    }*/
-    public static void main(String[] args) {
-       /* try {
-            Scanner scan = new Scanner(System.in);
-            System.out.println("Podaj liczbę a");
-            float a = scan.nextInt();
-            System.out.println("Podaj liczbę b");
-            float b = scan.nextInt();
-            System.out.println("Co chcesz wykonać za działanie? 1-dodawanie 2-odejmowanie 3-mnożenie 4-dzielenie");
-            int dzialanie = scan.nextInt();
-
-            switch (dzialanie) {
-                case 1:
-                    dodawanie(a, b);
-                    break;
-                case 2:
-                    odejmowanie(a, b);
-                    break;
-                case 3:
-                    mnozenie(a, b);
-                    break;
-                case 4:
-                    dzielenie(a, b);
-                    break;
-                default:
-                    System.out.println("Wybrano nieistniejące działanie");
-            }
-        }catch(InputMismatchException e){
-            System.out.println("Błąd");
-        }
-
-        String name2 = "Name";
-        String name3 = new String(name2);
-
-        System.out.println(name3 == name2);
-        System.out.println(name3.equals(name2));
-
-        System.out.println();*/
-
-        Samochod samochod = new Samochod();
-        samochod.setKolor("Niebieski");
-        samochod.setMarka("BMW");
-        samochod.setModel("A3");
-
-
-        System.out.println(samochod);
-
-        samochod.informacje();
-
     }
  }
